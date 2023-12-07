@@ -14,45 +14,45 @@
 <body>
         <!-- NAV -->
         <nav class="navbar navbar-expand-lg bg-white py-3">
-            <div class="container">
-              <a class="navbar-brand" href="index.html">
-                <i class="fa-solid fa-layer-group fa-xl"></i>
-              </a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="wishList.html">Wish List</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="products.html">products</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="orders.html">Orders</a>
-                  </li>
-                </ul>
-                <div>
-                  <a class="cartIcon" href="">
-                    <i class="fa-solid fa-magnifying-glass m-1 fa-xl"></i>
-                  </a>
-                  <a class="cartIcon" href="#" onclick="checkPages()" id="navLog" style="display: inline;">
-                    <i class="fa-regular fa-user m-1 fa-xl"></i>
-                  </a>
-                  <a class="cartIcon" href="#" onclick="deleteUser()" id="logOut" style="display: none;">
-                    <i class="fa-solid fa-right-from-bracket fa-xl"></i>
-                  </a>
-                  <a class="cartIcon" href="#" onclick="checkAccess()">
-                    <i class="fa-solid fa-bag-shopping m-1 fa-xl"></i>
-                  </a>
-                </div>
+          <div class="container">
+            <a class="navbar-brand" href="index.html">
+              <i class="fa-solid fa-layer-group fa-xl"></i>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                </li>
+                <li class="nav-item" id="wishLink">
+                  <a class="nav-link" href="wishList.html">Wish List</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="products.html">products</a>
+                </li>
+                <li class="nav-item" id="ordersLink">
+                  <a class="nav-link" href="orders.html">Orders</a>
+                </li>
+              </ul>
+              <div>
+                <a class="cartIcon" href="">
+                  <i class="fa-solid fa-magnifying-glass m-1 fa-xl"></i>
+                </a>
+                <a class="cartIcon" href="#" onclick="checkPages()" id="navLog" style="display: inline;">
+                  <i class="fa-regular fa-user m-1 fa-xl"></i>
+                </a>
+                <a class="cartIcon" href="#" onclick="deleteUser()" id="logOut" style="display: none;">
+                  <i class="fa-solid fa-right-from-bracket fa-xl"></i>
+                </a>
+                <a class="cartIcon" href="Cart.html"  id="cartLink">
+                  <i class="fa-solid fa-bag-shopping m-1 fa-xl"></i>
+                </a>
               </div>
             </div>
-          </nav>
+          </div>
+        </nav>
         <!-- NAV -->
     <div class="container mt-5">
         <div class="d-flex justify-content-center row">

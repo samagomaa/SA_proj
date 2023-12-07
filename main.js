@@ -82,21 +82,18 @@ function checkPages() {
 }
 function changeLogIcon() {
     if(localStorage.getItem("currentUser") == null){
-        ""
+        document.getElementById("wishLink").style.display = "none"
+        document.getElementById("ordersLink").style.display = "none"
+        document.getElementById("cartLink").style.display = "none"
     }else{
         logOut.style.display ="inline"
         navLog.style.display = "none"
+        document.getElementById("wishLink").style.display = "inline"
+        document.getElementById("ordersLink").style.display = "inline"
+        document.getElementById("cartLink").style.display = "inline"
     }
 }
 changeLogIcon()
-
-function checkAccess() {
-    if(localStorage.getItem("currentUser") == null){
-        window.location.href ="Login.html"
-        }else{
-        window.location.href ="Cart.html"
-        }
-}
 
 
 //check if he is in the signUP or signIN page 

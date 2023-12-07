@@ -33,13 +33,20 @@ function showData() {
                 </div>
             </div>
             <div  class='d-flex justify-content-between py-3 align-items-center '>
-                <button class='btn w-75 bg-dark addHover text-white addColorChange'> + Add</button>
-                <button class='btn btnFocus'><i class=" fa-solid fa-heart fa-xl heartPosition"></i></button>
+                <button onclick="checkAccess()" class='btn w-75 bg-dark addHover text-white addColorChange'> + Add</button>
+                <button onclick="checkAccess()" class='btn btnFocus'><i class=" fa-solid fa-heart fa-xl heartPosition"></i></button>
             </div>
         </div>
     </div> `
     })
     document.getElementById("myRow").innerHTML = temp
+}
+function checkAccess() {
+    if(localStorage.getItem("currentUser") == null){
+        window.location.href ="Login.html"
+        }else{
+            alert("The product added successfully")
+        }
 }
 
 function handleChange() {
