@@ -1,0 +1,25 @@
+.loginForm{
+    width: 50%;
+}
+@media only screen and (max-width: 600px) {
+    .loginForm{
+        width: 100%;
+    }
+}
+h4 a{
+    text-decoration: none;
+    color: black;
+}
+
+.container .incorrect{
+    color: red;
+    display: none;
+    justify-content: center; 
+    align-items: center;
+}
+.container .correct{
+    color: red;
+    display: none;
+    justify-content: center; 
+    align-items: center;
+}

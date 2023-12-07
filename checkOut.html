@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/62cf307394.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <!-- nav -->
+    <nav class="navbar navbar-expand-lg bg-white py-3">
+        <div class="container">
+          <a class="navbar-brand" href="index.html">
+            <i class="fa-solid fa-layer-group fa-xl"></i>
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="wishList.html">Wish List</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="products.html">products</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="orders.html">Orders</a>
+              </li>
+            </ul>
+            <div>
+              <a class="cartIcon" href="">
+                <i class="fa-solid fa-magnifying-glass m-1 fa-xl"></i>
+              </a>
+              <a class="cartIcon" href="#" onclick="checkPages()" id="navLog" style="display: inline;">
+                <i class="fa-regular fa-user m-1 fa-xl"></i>
+              </a>
+              <a class="cartIcon" href="#" onclick="deleteUser()" id="logOut" style="display: none;">
+                <i class="fa-solid fa-right-from-bracket fa-xl"></i>
+              </a>
+              <a class="cartIcon" href="#" onclick="checkAccess()">
+                <i class="fa-solid fa-bag-shopping m-1 fa-xl"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    <!-- nav -->
+    <div class="container vh-100 d-flex justify-content-center align-items-center">
+        <div class="shadow-lg w-75 py-5">
+            <form class="w-75 mx-auto">
+                <h2 class="fw-bold text-center">Check out</h2>
+                <label for="details">Details</label>
+                <input id='details' type="text" class='form-control mb-3' name='details' />
+                <label for="phone">Phone</label>
+                <input id='phone' type="text" class='form-control mb-4' name='phone'/>
+                <label for="city">City</label>
+                <input id='city' type="text" class='form-control mb-4' name='city'/>
+                <a href="https://checkout.stripe.com/c/pay/cs_test
+                _a1IpebuteZOvifLPgvyBz0lBckSDW5NsSiVtn1ND5lebtspWTJ
+                BeXctXRi#fidkdWxOYHwnPyd1blpxYHZxWjA0SHViYl1ANVYyU2
+                pOX2hVVW9ASmZBUElpa2FLVnBUQGo2UFduUEhIXHx9aEhjanBGZ
+                1NxZ3RKNVVtXWxcSTJ8Qzx2aWZkUEBpMXJCXVRHTkIxZzBSZmhEN
+                TUxYHVKMUpQVycpJ2N3amhWYHdzYHcnP3F3cGApJ2lkfGpwcVF8d
+                WAnPyd2bGtiaWBabHFgaCcpJ2BrZGdpYFVpZGZgbWppYWB3dic%2F
+                cXdwYHgl">
+                <button type='button' class='btn btn-dark w-100'>Pay</button>
+            </a>
+            </form>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>

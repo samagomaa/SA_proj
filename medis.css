@@ -1,0 +1,8 @@
+.registeForm{
+    width: 50%;
+}
+@media only screen and (max-width: 600px) {
+    .registeForm{
+        width: 100%;
+    }
+}
